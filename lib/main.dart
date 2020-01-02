@@ -1,7 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:so/ResultCard.dart';
+import 'ResultCard.dart';
 
 void main() => runApp(MyApp());
 
