@@ -54,6 +54,11 @@ class _ResultCardState extends State<ResultCard> {
               ),
               new Text(flutterHasPassedReactNative() == true ? "YES" : "NO",
                   style: TextStyle(fontSize: 100.0, letterSpacing: 5.0)),
+                  if (( reactNativecount - fluttercount).isNegative)
+                  new Text(
+                  "${ fluttercount - reactNativecount } ${ reactNativecount - fluttercount == 1 ? 'star' : 'stars'} ahead!",
+                  style: TextStyle(fontSize: 20.0))
+                  else 
               new Text(
                   "Only ${ reactNativecount - fluttercount } ${ reactNativecount - fluttercount == 1 ? 'star' : 'stars'} away!",
                   style: TextStyle(fontSize: 20.0)),
